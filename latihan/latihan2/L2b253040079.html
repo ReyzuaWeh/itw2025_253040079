@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .tabel-1{
+            border-collapse: collapse;
+        }
+        .tabel-1>thead>tr>th, .tabel-1>tbody>tr>td{
+            padding: 0.3rem;
+        }
+        .tabel-head{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table class="tabel-1" border="1">
+            <thead class="tabel-head">
+                <tr>
+                    <th colspan="3">INPUT DATA MAHASISWA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <input type="text" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fullname</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <input type="text" name="fullname" id="fullname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <select name="agama" id="agama">
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="konghucu">Konghucu</option>
+                            <option value="kyme">Ketuhanan Yang Maha Esa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <input type="radio"> Laki-laki
+                        <input type="radio"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobi[]" id="hobi[]">Musik
+                        <input type="checkbox" name="hobi[]" id="hobi[]">Olahraga
+                        <input type="checkbox" name="hobi[]" id="hobi[]">Gaming
+                        <input type="checkbox" name="hobi[]" id="hobi[]">Lainnya
+                    </td>
+                </tr>
+                <tr>
+                    <td>Profil Singkat</td>
+                    <td>
+                        <center>:</center>
+                    </td>
+                    <td>
+                        <textarea name="profil" id="profile"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: end;" colspan="3">
+                        <input type="submit" value="Input">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
