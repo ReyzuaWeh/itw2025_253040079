@@ -1,24 +1,18 @@
 body{
-    background-color: aqua;
+    background-image: url("assets/background.png");
+    background-repeat: repeat-x;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 h1{
-    text-align: center;
     font-family: 'Comic Sans MS';
     color: darkblue;
     font-size: 60px;
 }
 h4{
-    text-align: right;
     font-style: italic;
 }
-p{
-    text-align: center;
-}
 a.oleh{
-    color: white;
-}
-a.oleh:hover{
     color: darkred;
     text-decoration: none;
 }
