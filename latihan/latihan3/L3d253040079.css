@@ -12,17 +12,17 @@ h1{
 h4{
     font-style: italic;
 }
-a.oleh{
+h3>a{
     color: red;
 }
-a.facebook{
+p>a{
     text-decoration: none;
     font-weight: bold;
 }
-a.facebook:hover{
+p>a:hover{
     background-color: blue;
     color: white;
 }
-p.paragraf1{
+h3+p{
     color: goldenrod;
 }

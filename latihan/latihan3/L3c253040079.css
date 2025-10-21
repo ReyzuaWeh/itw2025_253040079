@@ -15,21 +15,21 @@ h4{
 p{
     text-align: center;
 }
-a.oleh{
+h3>a{
     color: white;
 }
-a.oleh:hover{
+h3>a:hover{
     color: darkred;
     text-decoration: none;
 }
-a.facebook{
+p>a{
     text-decoration: none;
     font-weight: bold;
 }
-a.facebook:hover{
+p>a:hover{
     background-color: blue;
     color: white;
 }
-p.paragraf1{
+h3+p{
     color: goldenrod;
 }
