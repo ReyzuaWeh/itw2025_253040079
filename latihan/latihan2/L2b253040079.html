@@ -5,24 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-        .tabel-1{
-            border-collapse: collapse;
-        }
-        .tabel-1>thead>tr>th, .tabel-1>tbody>tr>td{
-            padding: 0.3rem;
-        }
-        .tabel-head{
-            background-color: gray;
-        }
-        input[type=text], input[type=password], input[type=email], select, textarea{
-            width: 100%;
-        }
     </style>
 </head>
 <body>
     <form>
-        <table class="tabel-1" border="1">
-            <thead class="tabel-head">
+        <table cellspacing="0" cellpadding="10" border="1">
+            <thead bgcolor="gray">
                 <tr>
                     <th colspan="3">INPUT DATA MAHASISWA</th>
                 </tr>
@@ -113,7 +101,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: end;" colspan="3">
+                    <td align="right" colspan="3">
                         <input type="submit" value="Input">
                     </td>
                 </tr>
