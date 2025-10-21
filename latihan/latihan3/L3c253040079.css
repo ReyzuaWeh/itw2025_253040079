@@ -1,0 +1,31 @@
+body{
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    color: darkblue;
+    font-size: 60px;
+}
+h4{
+    text-align: right;
+    font-style: italic;
+}
+p{
+    text-align: center;
+}
+a.oleh{
+    color: white;
+}
+a.oleh:hover{
+    color: darkred;
+    text-decoration: none;
+}
+a.facebook:hover{
+    background-color: blue;
+    color: white;
+}
+p.paragraf1{
+    color: goldenrod;
+}
