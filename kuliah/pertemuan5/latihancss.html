@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Belajar CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
     <style>
         h1, h3{
             color: lightblue;
             text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Bitcount Grid Single", system-ui;
             font-size: 60px;
         }
         h3{
@@ -16,7 +19,15 @@
         }
         p{
             color: green;
+        }
+        div>p{
+            font-size: 30px;
+        }
+        h3+p{
             text-align: center;
+        }
+        div+p{
+            font-family: Arial;
         }
     </style>
 </head>
