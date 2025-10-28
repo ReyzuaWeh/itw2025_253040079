@@ -46,12 +46,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
+
+
+
+
+
+
+
 /* our style */
+:root{
+    --warna-rx8: rgb(218, 45, 39);
+    --warna-dark: rgb(48, 48, 48);
+}
+*, html{
+    scroll-behavior: smooth;
+}
 
 body{
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
-    background-image: url('img/body.webp');
+    background-image: url('img/darkexa_pattern.webp');
     color: #333;
 }
 .container{
@@ -60,49 +77,77 @@ body{
     background-color: #fff;
 }
 .header{
-    padding: 20px;
-    padding-bottom: 10px;
+    display: inline;
+    position: sticky;
+    background-color:  rgb(248, 248, 248);
+    top: 0;
 }
-.header .judul{
+.header>ul{
+    background-color: inherit;
+    padding: 0 10px;
+    border-bottom: 5px solid var(--warna-rx8);
+}
+.hero>.judul{
     font-size: 40px;
     font-weight: bold;
+    color: white;
+}
+.hero>a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    background-color: var(--warna-rx8);
+    transition: 0.2s;
+}
+.hero>a:hover{
+    background-color: rgba(218, 45, 39, 0.75);
 }
 .header ul li{
+    font-size:1.15em; 
     display: inline-block;
-    margin-top: 20px;
     margin-right: 5px;
 }
 .header a{
     text-decoration: none;
-    color:salmon;
-    padding: 3px
+    color:var(--warna-rx8);
+    padding: 5px;
+    transition: 0.2s;
 }
 .header a:hover{
-    background-color: lightskyblue;
+    background-color: #1E0807ff;
     color: white;
 }
 .hero{
-    height: 200px;
-    background-image: url("img/rx8oled.jpg");
+    height: calc(100dvh - 29px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.75)), url("img/rx8oled.jpg");
     background-size: cover;
-    background-position: 0 -180px;
-    border-bottom: 5px solid lightskyblue;
-    border-top: 5px solid salmon;
+    border-bottom: 5px solid var(--warna-rx8);
 }
 .content{
     padding: 20px;
+    background-color: var(--warna-dark);
+    color:rgb(202, 202, 202)
 }
 
 .content h2{
     font-size: 28px;
     font-weight: bold;
+    color:white;
 }
 .content .penulis{
     font-size: 11px;
     margin-top: -5px;
 }
 .content .penulis a{
-    color: salmon;
+    color: var(--warna-rx8);
     text-decoration: none;
 }
 .content p{
@@ -110,7 +155,8 @@ body{
     font-size: 14px;
 }
 .footer {
-    background-color: #333;
+    border-top: 5px solid var(--warna-rx8);
+    background-color: var(--warna-dark);
     padding: 10px;
 }
 .footer .copy{
